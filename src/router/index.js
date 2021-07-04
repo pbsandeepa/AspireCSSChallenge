@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Admin from '../components/Admin.vue'
-import Customer from '../components/Customer.vue'
-import Repay from '../components/Repay.vue'
+import Cards from '../components/Cards.vue'
 
 Vue.use(VueRouter)
 
@@ -12,22 +10,12 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    redirect:'/Customer'
+    redirect:'/Cards'
   },
   {
-    path: '/Customer',
-    name: 'Customer',
-    component: Customer
-  },
-  {
-    path: '/Admin',
-    name: 'Admin',
-    component: Admin
-  },
-  {
-    path: '/Repay',
-    name: 'Repay',
-    component: Repay
+    path: '/Cards',
+    name: 'Cards',
+    component: Cards
   },
   {
     path: '/about',
